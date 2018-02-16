@@ -1,0 +1,22 @@
+
+package:
+  name: cc_pack
+  version: "0.1"
+
+source:
+  path: ../
+
+requirements:
+    build:
+        - python
+    run:
+        - python
+
+build:
+  script: python setup.py install
+  entry_points:
+    - cc_test = cc_pack.do_stuff:main
+	
+test:
+  imports:
+    - cc_pack

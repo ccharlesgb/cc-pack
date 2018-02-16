@@ -1,0 +1,24 @@
+
+package:
+  name: {% block package_name %}{% endblock %}
+  version: 0.1
+
+source:
+  path: ../
+
+{% block requirements %}
+
+{% endblock %}
+
+build:
+  script: python setup.py install
+  entry_points:
+    - cc_test = cc_pack.do_stuff:main
+	
+test:
+  imports:
+    - cc_pack
+    
+
+  
+

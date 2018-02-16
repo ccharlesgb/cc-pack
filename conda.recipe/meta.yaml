@@ -1,0 +1,13 @@
+{% extends "base_meta.yaml" %}
+
+{% block package_name %}cc-pack{% endblock %}
+
+{% block requirements %}
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    
+{% endblock %}
